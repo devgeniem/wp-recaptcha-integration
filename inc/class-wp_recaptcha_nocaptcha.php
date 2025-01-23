@@ -193,7 +193,7 @@ class WP_reCaptcha_NoCaptcha extends WP_reCaptcha_Captcha {
 		if ( $language_code = apply_filters( 'wp_recaptcha_language' , WP_reCaptcha::instance()->get_option( 'recaptcha_language' ) ) )
 			$recaptcha_api_url = add_query_arg('hl',$language_code,$recaptcha_api_url);
 		
-		?><script src="<?php echo esc_url( $recaptcha_api_url ) ?>" async defer data-cookieconsent="ignore">></script><?php
+		?><script src="<?php echo esc_url( $recaptcha_api_url ) ?>" async defer data-cookieconsent="ignore"></script><?php
 	}
 	
 	
